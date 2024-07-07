@@ -1,0 +1,57 @@
+/* styles.css */
+
+/* Common styles for all screen sizes */
+body {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+.grid-container {
+    display: grid;
+    padding: 10px;
+    gap: 15px 15px;
+}
+
+.grid-item {
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 150px;
+    font-size: 30px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%; /* Ensures images don't exceed their container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px) {
+    .grid-container {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .grid-container {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
